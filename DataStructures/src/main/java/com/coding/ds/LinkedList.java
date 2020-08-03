@@ -141,6 +141,35 @@ public class LinkedList {
 
     }
 
+    public int getKthValueFromTheEnd(int k) {
+        if(first == null) {
+            throw new IllegalStateException();
+        }
+        if(k > size) {
+            throw new IllegalArgumentException();
+        }
+        Node previous = first;
+        Node current = getKthNode(k-1);
+        while(current != last) {
+            previous = previous.next;
+            current = current.next;
+        }
+        return previous.value;
+    }
+
+    private Node getKthNode(int k) {
+        if(k > size) {
+            throw new IllegalArgumentException();
+        }
+        Node current = first;
+        int i = 0;
+        while(current != null && i <= k - 1) {
+            current = current.next;
+            i++;
+        }
+        return current;
+    }
+
     public void reverseList() {
         if(first == null) {
             return;
