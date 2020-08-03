@@ -4,25 +4,31 @@
 
 **Today's Progress**: I have developed java program on LinkedList to get complete knowledge on LinkedList 
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Thoughts:** Explored java.util.LinkedList and understood implementation of the class internally. 
 
 **Link to work:** [Calculator App](http://www.example.com)
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+### Day 1: August 2, 2020 (Data Structures - LinkedList)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**: Developed Custom LinkedList class and implemented below methods
+1. addFirst
+2. addLast
+3. deleteFirst
+4. deleteLast
+5. indexOf
+6. contains
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link(s) to work**: [Calculator App](http://www.example.com)
+**Thoughts**: I really enjoyed implementing above methods
 
 
-### Day 1: June 27, Monday
+### Day 3: August 03, Monday (Data Structures - LinkedList)
 
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
+**Today's Progress**: I have completed below exercises on LinkedList
 
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+1. Convert LinkedList to Array
+2. Reverse LinkedList in two ways
+
+**Thoughts** I have implemented reverse of LinkedList on my own and learnt another way of implementing Reverse of LinkedList. 
 
 **Link(s) to work**
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
