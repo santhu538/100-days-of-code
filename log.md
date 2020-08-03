@@ -27,6 +27,7 @@
 
 1. Convert LinkedList to Array
 2. Reverse LinkedList in two ways
+3. getKthValueFromTheEnd
 
 **Thoughts** I have implemented reverse of LinkedList on my own and learnt another way of implementing Reverse of LinkedList. 
 
