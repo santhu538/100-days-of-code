@@ -149,7 +149,7 @@ public class LinkedList {
             throw new IllegalArgumentException();
         }
         Node previous = first;
-        Node current = getKthNode(k-1);
+        Node current = get(k-1);
         while(current != last) {
             previous = previous.next;
             current = current.next;
@@ -157,7 +157,7 @@ public class LinkedList {
         return previous.value;
     }
 
-    private Node getKthNode(int k) {
+    private Node get(int k) {
         if(k > size) {
             throw new IllegalArgumentException();
         }
@@ -168,6 +168,33 @@ public class LinkedList {
             i++;
         }
         return current;
+    }
+
+    public void printMiddle() {
+        if(first == null) {
+            System.out.println("LinkedList is emplty");
+            return;
+        }
+      /*  else if(first == last) {
+            System.out.println("Middle value of LinkedList"+first.value);
+            return;
+        }
+        else if(first.next == last) {
+            System.out.println("Middle values of LinkedList"+first.value+" "+first.next.value);
+            return;
+        }*/
+        Node previous = first;
+        Node current = first;
+
+        while(current != last && current.next != last) {
+            previous = previous.next;
+            current = current.next.next;
+        }
+        if(current == last) {
+            System.out.println("Middle value of LinkedList "+previous.value);
+        } else {
+            System.out.println("Middle values of LinkedList are "+previous.value+" "+previous.next.value);
+        }
     }
 
     public void reverseList() {
@@ -186,6 +213,32 @@ public class LinkedList {
         last = first;
         last.next = null;
         first = previous;
+    }
+
+    public boolean hasLoop() {
+        Node slow = first;
+        Node fast = first;
+
+        while(slow != last && fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void addLoop() {
+        if(last == null) {
+            return;
+        }
+       // System.out.println("size "+size);
+        size = size();
+        if(size > 2) {
+            last.next = get(size-2-1);
+           // System.out.println("Added loop to last "+last.next.value);
+        }
     }
 
     private class Node {
