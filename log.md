@@ -40,6 +40,15 @@
 
 **Thoughts** Great to know the logic for finding middle number(s) of LinkedList. 
 
+### Day 5: August 05, Wednesday (Data Structures - Stack)
+
+**Today's Progress**: I have completed below exercises on Stack
+
+1. Implement Stack.
+2. Reverse of String using Stack
+3. Check if an expression is balanced
+
+
 
 **Link(s) to work**
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
