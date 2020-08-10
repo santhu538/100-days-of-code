@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 0: August 1, 2020 (Data Structures - LinkedList)
+### Day 1: August 1, 2020 (Data Structures - LinkedList)
 
 **Today's Progress**: I have developed java program on LinkedList to get complete knowledge on LinkedList 
 
@@ -8,7 +8,7 @@
 
 **Link to work:** [Sample](http://www.example.com)
 
-### Day 1: August 2, 2020 (Data Structures - LinkedList)
+### Day 2: August 2, 2020 (Data Structures - LinkedList)
 
 **Today's Progress**: Developed Custom LinkedList class and implemented below methods
 1. addFirst
@@ -47,6 +47,12 @@
 1. Implement Stack.
 2. Reverse of String using Stack
 3. Check if an expression is balanced
+
+### Day 10: August 10, Monday (Data Structures - Queue)
+
+**Today's Progress**: I have completed below exercises on Queue
+
+1. Reverse of Queue
 
 
 
