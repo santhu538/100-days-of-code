@@ -20,6 +20,7 @@ public class LinkedList {
         first = node;
     }
 
+
     public void addLast(int value) {
         Node node = new Node(value);
         if(first == null) {
@@ -215,6 +216,9 @@ public class LinkedList {
         first = previous;
     }
 
+
+
+
     public boolean hasLoop() {
         Node slow = first;
         Node fast = first;
@@ -240,6 +244,46 @@ public class LinkedList {
            // System.out.println("Added loop to last "+last.next.value);
         }
     }
+
+    public void reverseL() {
+
+        Node previous = first;
+        Node current = first.next;
+        first.next = null;
+        first = last;
+        last = previous;
+        while(current != null) {
+
+            Node next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+
+
+    }
+    public void reverseR(Node previous, Node current) {
+        Node next = current.next;
+        if(current.next !=null ) {
+            if(previous.next == current) {
+                last = previous;
+            }
+            current.next = previous;
+            reverseR(current,next );
+        }
+        else {
+            current.next = previous;
+            first = current;
+            last.next = null;
+        }
+
+    }
+
+    public void reverseRec() {
+        reverseR(first, first.next);
+    }
+
+
 
     private class Node {
         private int value;

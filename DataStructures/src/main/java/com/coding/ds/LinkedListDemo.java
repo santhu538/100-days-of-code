@@ -32,7 +32,7 @@ public class LinkedListDemo {
       System.out.println("KthNode from end "+list.getKthValueFromTheEnd(-1));
 
        list.printValues();
-       list.reverseList();
+       list.reverseRec();
         list.printValues();
         list.deleteLast();
         list.printValues();
