@@ -54,12 +54,17 @@
 
 1. Reverse of Queue
 
-### Day 11: August 11, Monday (Data Structures - LinkedList, Queue)
+### Day 11: August 11, Tuesday (Data Structures - LinkedList, Queue)
 
 **Today's Progress**: It was tough to set head and tail pointers after reversing linkedlist. 
 
 1. Reverse of LinkedList using recursion
 
+### Day 12: August 12, Wednesday (Data Structures - Queue)
+
+**Today's Progress**: Enjoyed implementing this logic. 
+
+1. Implemented Queue with Circular Array
 
 
 
