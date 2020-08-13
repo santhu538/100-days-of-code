@@ -37,6 +37,10 @@ public class Stack {
         return index == 0;
     }
 
+    public boolean full() {
+        return index == maxSize;
+    }
+
     @Override
     public String toString() {
         int[] content = Arrays.copyOfRange(array, 0, index);

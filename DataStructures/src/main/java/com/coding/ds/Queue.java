@@ -16,10 +16,11 @@ public class Queue {
         if(isFull()) {
             throw new StackOverflowError();
         }
-        if(end == array.length) {
-            end = 0;
-        }
-        array[end++] = n;
+//        if(end == array.length) {
+//            end = 0;
+//        }
+        array[end] = n;
+        end = (end + 1)%array.length;
         count++;
     }
 
@@ -27,11 +28,12 @@ public class Queue {
         if(isEmpty()) {
             throw new IllegalAccessException();
         }
-        if(start == array.length) {
-            start = 0;
-        }
+//        if(start == array.length) {
+//            start = 0;
+//        }
         int item = array[start];
-        array[start++] = 0;
+        array[start] = 0;
+        start = (start + 1)%array.length;
         count--;
         return item;
     }

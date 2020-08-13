@@ -66,6 +66,13 @@
 
 1. Implemented Queue with Circular Array
 
+### Day 13: August 13, Thursday (Data Structures - Queue)
+
+**Today's Progress**: Enjoyed implementing this logic. 
+
+1. Improvised logic while implementing Circular Queue
+2. Implemented Queue with Stack
+
 
 
 **Link(s) to work**

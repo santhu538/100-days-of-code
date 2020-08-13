@@ -9,6 +9,26 @@ public class QueueDemo {
     public static void main(String[] args) throws IllegalAccessException {
         //implementJavaQueue();
         implementQueueWithArray();
+        implementQueueWithStack();
+    }
+
+    private static void implementQueueWithStack() {
+        StackQueue stackQueue = new StackQueue(5);
+        stackQueue.enqueue(10);
+        stackQueue.enqueue(20);
+        stackQueue.enqueue(30);
+        stackQueue.enqueue(40);
+        System.out.println(stackQueue);
+        System.out.println(" dequeue "+stackQueue.dequeue());
+        System.out.println(stackQueue);
+        System.out.println(" dequeue "+stackQueue.dequeue());
+        stackQueue.enqueue(50);
+        stackQueue.enqueue(60);
+        System.out.println(stackQueue);
+        System.out.println(" dequeue "+stackQueue.dequeue());
+        System.out.println(" dequeue "+stackQueue.dequeue());
+        System.out.println(" dequeue "+stackQueue.dequeue());
+        System.out.println(stackQueue);
     }
 
     private static void implementQueueWithArray() throws IllegalAccessException {
